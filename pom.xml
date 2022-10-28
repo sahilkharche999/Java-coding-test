@@ -47,7 +47,11 @@
 			<artifactId>hibernate-types-52</artifactId>
 			<version>2.16.2</version>
 		</dependency>
-
+<!--		<dependency>-->
+<!--			<groupId>junit</groupId>-->
+<!--			<artifactId>junit</artifactId>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
 	</dependencies>
 
 	<build>
