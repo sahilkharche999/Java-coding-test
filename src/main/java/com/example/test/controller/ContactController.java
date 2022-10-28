@@ -1,6 +1,7 @@
 package com.example.test.controller;
 
 import com.example.test.entity.Contact;
+import com.example.test.model.CallList;
 import com.example.test.service.ContactService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -41,5 +42,10 @@ public class ContactController {
     public ResponseEntity<Void> deleteById(@PathVariable("id") Long id) {
         service.deleteById(id);
         return ResponseEntity.status(204).build();
+    }
+
+    @GetMapping("/call-list")
+    public ResponseEntity<List<CallList>> getCallList(){
+        return ResponseEntity.ok(service.getCallList());
     }
 }

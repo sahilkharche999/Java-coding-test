@@ -1,6 +1,7 @@
 package com.example.test.service;
 
 import com.example.test.entity.Contact;
+import com.example.test.model.CallList;
 
 import java.util.List;
 
@@ -15,5 +16,7 @@ public interface ContactService {
     Contact getById(Long id);
 
     void deleteById(Long id);
+
+    List<CallList> getCallList();
 
 }
